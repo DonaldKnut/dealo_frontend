@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormSuccess } from "@/components/form-success";
 import { FormError } from "@/components/form-error";
-import { Switch } from "@/components/ui/switch";
+// import { Switch } from "@/components/ui/switch";
 import {
   Select,
   SelectContent,
@@ -22,7 +22,7 @@ import {
   FormControl,
   FormItem,
   FormLabel,
-  FormDescription,
+  // FormDescription,
   FormMessage,
 } from "@/components/ui/form";
 import { settings } from "@/actions/settings";

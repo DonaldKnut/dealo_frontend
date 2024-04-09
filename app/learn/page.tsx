@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { FaLinkedin } from "react-icons/fa6";
@@ -34,12 +34,12 @@ export default function Home() {
           </p>
         </Reveal>
         <Reveal>
-          <Link href="/learn">
+          <a href="/dealo-learn/academy">
             <Button variant="secondary" className="mt-5 mb-5">
               Start Learning{" "}
-              <IoIosArrowDroprightCircle className="text-green-700 text-2xl" />
+              <MdOutlineArrowOutward className="text-green-700 text-2xl" />
             </Button>
-          </Link>
+          </a>
         </Reveal>
         <Reveal>
           <div className="socials_mother_wrapper_container flex gap-2 text-2xl text-green-300">

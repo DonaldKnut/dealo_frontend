@@ -8,6 +8,10 @@ body,
   height: 100vh;
 } */
 
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap"); */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -72,6 +76,11 @@ body,
   }
 }
 
+.freelance {
+  font-size: 40px;
+  font-family: "Lobster";
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -81,16 +90,15 @@ body,
   }
 }
 
-body {
-  padding: 20px;
+body,
+html {
+  /* padding: 20px; */
   /* background: linear-gradient(275deg, #346f36, #286842); */
+  height: 100%;
+  /* color: white; */
   background: linear-gradient(137deg, #333333, #203020);
 }
+/* 
+@media (min-width: 390px) {
 
-@media (min-width: 790px) {
-  html,
-  body,
-  :root {
-    height: 100vh;
-  }
-}
+} */

@@ -19,10 +19,12 @@ export const {
   },
   events: {
     async linkAccount({ user }) {
-      await db.user.update({
-        where: { id: user.id },
-        data: { emailVerified: new Date() },
-      });
+      if (user?.id) {
+        await db.user.update({
+          where: { id: user.id },
+          data: { emailVerified: new Date() },
+        });
+      }
     },
   },
   callbacks: {
@@ -38,8 +40,6 @@ export const {
           existingUser.id
         );
 
-        console.log(twoFactorConfirmation);
-
         if (!twoFactorConfirmation) return false;
 
         // Delete two factor confirmation for next sign in
@@ -51,24 +51,21 @@ export const {
       return true;
     },
     async session({ token, session }) {
-      console.log({
-        sessionToken: token,
-      });
-      if (token.sub && session.user) {
+      if (token?.sub && session?.user) {
         session.user.id = token.sub;
       }
 
-      if (token.role && session.user) {
+      if (token?.role && session?.user) {
         session.user.role = token.role as UserRole;
       }
 
-      if (session.user) {
+      if (session?.user) {
         session.user.isTwoFactorEnabled = token.isTwoFactorEnabled as boolean;
       }
 
-      if (session.user) {
+      if (session?.user) {
         session.user.name = token.name;
-        session.user.email = token.email;
+        session.user.email = token.email as string;
         session.user.isOAuth = token.isOAuth as boolean;
       }
 

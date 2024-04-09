@@ -45,8 +45,8 @@ const AdminPage = () => {
           <FormSuccess message="You are allowed to see this content!" />
         </RoleGate>
         <p className="flex items-center">
-          <TbInfoSquareRoundedFilled className="gap-2 text-xl mr-2" />
-          Only the admin can access these links
+          <TbInfoSquareRoundedFilled className="gap-2 text-xl mr-2 text-green-500" />
+          Only the admin can access the links
         </p>
         {userRole === UserRole.ADMIN && (
           <>
