@@ -28,14 +28,14 @@ const Footer = (props: Props) => {
               </h3>
             </Reveal>
             <Reveal>
-              <p className="font-sans my-3">
+              <p className="my-3">
                 Join our newsletter to stay up to date on features and releases.
               </p>
             </Reveal>
           </div>
           <div className="second_wrap">
             <Reveal>
-              <h5 className="font-sans text-3xl">stay up to date</h5>
+              <h5 className="text-3xl">stay up to date</h5>
             </Reveal>
             <div className="input_box">
               <div className="input_wrapper">
@@ -57,7 +57,7 @@ const Footer = (props: Props) => {
               </Reveal>
             </div>
             <Reveal>
-              <p className="font-sans">
+              <p className="">
                 by subscribing you agree with our{" "}
                 <a href="#" className="text-green-500 privacy_tag">
                   privacy policy
@@ -81,7 +81,7 @@ const Footer = (props: Props) => {
       </div>
       <div className="footer_socials">
         <Reveal>
-          <h1 className="footer_subtitle font-sans">
+          <h1 className="footer_subtitle">
             &copy; Dealo Group Incorporation. <span>All Rights Reserved</span>
           </h1>
         </Reveal>

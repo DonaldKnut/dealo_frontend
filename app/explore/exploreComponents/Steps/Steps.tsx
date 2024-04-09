@@ -15,7 +15,7 @@ const Steps = (props: Props) => {
     <div className="steps_wrapper_container">
       <div className="step_boxes">
         <MdFlight className="text-5xl coins" />
-        <h2 className="font-sans text-green-800">
+        <h2 className="text-green-800">
           Travel in premium Style
           <br />
           With our Luxury Escapade
@@ -30,7 +30,7 @@ const Steps = (props: Props) => {
       </div>
       <div className="step_boxes">
         <GiTwoCoins className="text-5xl coins" />
-        <h2 className="font-sans text-green-800">
+        <h2 className="text-green-800">
           Let's finance your travels
           <br />
           while you pay us later.
@@ -45,7 +45,7 @@ const Steps = (props: Props) => {
       </div>
       <div className="step_boxes odd_step_box">
         {/* <IoSchoolSharp className="text-5xl coins" /> */}
-        <h2 className="font-sans text-green-800 mb-16 package_text text-2xl">
+        <h2 className="text-green-800 mb-16 package_text text-2xl">
           Check Our Other
           <br />
           Packages

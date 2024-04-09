@@ -46,9 +46,9 @@ const Featured = () => {
           </Reveal>
           <div className="search">
             <div className="search-input">
-              <Reveal>
-                <FaMagnifyingGlass />
-              </Reveal>
+              {/* <Reveal>
+              <FaMagnifyingGlass />
+            </Reveal> */}
               <Reveal>
                 <input
                   type="text"

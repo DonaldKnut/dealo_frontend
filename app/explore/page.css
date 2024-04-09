@@ -31,17 +31,7 @@
 }
 
 body {
-  font-family: "DM Sans";
+  /* font-family: "DM Sans"; */
   color: white;
   background-color: #2e342e;
-}
-
-@layer utilities {
-  .flexBetween {
-    @apply flex items-center justify-between;
-  }
-
-  .btn_green_rounded {
-    @apply border-green-500 bg-green-500 px-8 py-4 text-white transition-all hover:ring-offset-emerald-600;
-  }
 }

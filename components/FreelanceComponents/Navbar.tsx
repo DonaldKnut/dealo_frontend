@@ -210,7 +210,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     <Link href="/settings">
                       <span className="link_for-small-icons">
                         <Image
-                          src="/assets/logout.png"
+                          src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712655780/zrtsrsfalnxa18ilovoh.png"
                           alt="icon for logout"
                           className="small__icons"
                           width={20}
@@ -334,7 +334,7 @@ const Navbar: React.FC<NavbarProps> = ({
                         <Link href="/settings">
                           <span className="link_for-small-icons">
                             <Image
-                              src="/assets/logout.png" // Adjust the path accordingly
+                              src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712655780/zrtsrsfalnxa18ilovoh.png" // Adjust the path accordingly
                               alt="icon for logout"
                               className="small__icons"
                               width={20}

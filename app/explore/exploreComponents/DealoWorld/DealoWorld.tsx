@@ -30,7 +30,7 @@ const DealoWorld = (props: Props) => {
               </span>
             </Reveal>
             <Reveal>
-              <p className="font-sans my-2">
+              <p className="my-2">
                 These courses not only elevate your travel experience but also
                 position you as a sought-after candidate upon your return.
               </p>
@@ -44,7 +44,7 @@ const DealoWorld = (props: Props) => {
               </span>
             </Reveal>
             <Reveal>
-              <p className="font-sans my-2">
+              <p className="my-2">
                 These courses not only elevate your travel experience but also
                 position you as a sought-after candidate upon your return.
               </p>

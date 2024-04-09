@@ -44,7 +44,7 @@ const MobileWrap = (props: Props) => {
                   </span>
                 </Reveal>
                 <Reveal>
-                  <p className="font-sans my-2">
+                  <p className="my-2">
                     Your adventure begins here, where every click leads to new
                     horizons and endless possibilities
                   </p>

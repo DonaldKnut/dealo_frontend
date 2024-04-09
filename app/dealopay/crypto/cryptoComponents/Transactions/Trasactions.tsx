@@ -1,8 +1,8 @@
 "use client";
 import React, { FC, useContext } from "react";
-import { TransactionContext } from "../../../../context/TransactionContext";
+import { TransactionContext } from "../../../../../context/TransactionContext";
 import "./Transactions.css";
-import Loader from "../Loader/Loader";
+// import Loader from "../Loader/Loader";
 import useFetch from "../hooks/useFetch";
 import transactionsData from "../Utils/Transaction.json";
 import dummyData from "../Utils/dummyData";
@@ -50,14 +50,14 @@ const TransactionsCard: FC<TransactionsCardProps> = ({
   abi,
   bytecode,
   deployedBytecode,
-  key,
-  id,
-  url,
-  message,
-  timestamp,
-  addressFrom,
-  amount,
-  addressTo,
+  // key,
+  // id,
+  // url,
+  // message,
+  // timestamp,
+  // addressFrom,
+  // amount,
+  // addressTo,
 }) => {
   const gifUrl = useFetch({ keyword: _format || "" });
 

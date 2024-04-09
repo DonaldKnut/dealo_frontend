@@ -20,7 +20,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, src, subtitle }) => (
-  <div className="services-card_wrapper font-sans text-white">
+  <div className="services-card_wrapper text-white">
     <div>
       {typeof src === "string" ? (
         <img src={src} alt={`image of ${title}`} width={73} />
@@ -45,7 +45,7 @@ const Services: React.FC = () => {
     <div>
       <div>
         <div>
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 m-3 font-sans">
+          <h1 className="text-xl sm:text-4xl text-white text-gradient py-1 m-3">
             <span className="freelance services">Services</span> that we
             <br />
             continue to improve.

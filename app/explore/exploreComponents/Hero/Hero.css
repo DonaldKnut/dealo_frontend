@@ -51,7 +51,7 @@ video::before {
 
 .later-text {
   font-size: 58px;
-  font-family: "Preahvihear", sans-serif;
+  /* font-family: "Preahvihear", sans-serif; */
 }
 
 @media (min-width: 768px) {

@@ -8,7 +8,7 @@ const CryptoAdvert: React.FC = () => {
     <div>
       <>
         <div className="mobile-advert-crypto-container text-white">
-          <div className="mobile_advert-crypto-wrap font-sans">
+          <div className="mobile_advert-crypto-wrap">
             <div className="label-text_wrapper">
               <div className="label-text_wrapper-left text-white">
                 <Image

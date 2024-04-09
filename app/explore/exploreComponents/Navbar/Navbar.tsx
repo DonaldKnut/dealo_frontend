@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
   const [menuOpened, setMenuOpened] = useState(false);
   const toggleMenu = () => setMenuOpened(!menuOpened);
   return (
-    <nav className="flex items-center justify-between max-container px-12 z-30 py-2 shadow-xl rounded-full ring-offset-green-500 fixed w-[95%] left-[50%] top-1 translate-x-[-50%] font-sans bg-green-900/90 text-white">
+    <nav className="flex items-center justify-between max-container px-12 z-30 py-2 shadow-xl rounded-full ring-offset-green-500 fixed w-[95%] left-[50%] top-1 translate-x-[-50%] bg-green-900/90 text-white">
       <Link href="/" passHref>
         <Image
           src="https://res.cloudinary.com/dtujpq8po/image/upload/v1704478798/cryptoAssets/travelImages/dealo_travels_alt_ogacyg.png"

@@ -131,11 +131,11 @@ const Welcome: React.FC = () => {
     <div>
       <div className="mother-ethereum-wrapper text-white">
         <div className="crypto-section_left-part">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1 font-sans">
+          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send <span className="freelance text-4xl">Crypto</span> <br />{" "}
             across the world
           </h1>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base font-sans">
+          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Explore the crypto world. Buy and sell cryptocurrencies easily on
             Dealo Pay.
           </p>
@@ -143,7 +143,7 @@ const Welcome: React.FC = () => {
             <button
               type="button"
               onClick={connectWallet}
-              className="flex flex-row justify-center items-center my-5 bg-[#4c8d55] p-3 rounded-full cursor-pointer hover:bg-[#6ab053] font-sans"
+              className="flex flex-row justify-center items-center my-5 bg-[#4c8d55] p-3 rounded-full cursor-pointer hover:bg-[#6ab053]"
               disabled={!isMetaMaskInstalled()}
             >
               <AiFillPlayCircle className="text-white mr-2" />
@@ -153,7 +153,7 @@ const Welcome: React.FC = () => {
             </button>
           )}
 
-          <div className="crypto-menu-advert-wrapper font-sans">
+          <div className="crypto-menu-advert-wrapper">
             <div className="first-crypto-menu-wrapper general-style">
               Reliability
             </div>
@@ -185,10 +185,10 @@ const Welcome: React.FC = () => {
                 <BsInfoCircle fontSize={22} color="#fff" />
               </div>
               <div>
-                <p className="text-white font-light text-xs font-sans">
+                <p className="text-white font-light text-xs">
                   {shortenAddress(currentAccount)}
                 </p>
-                <p className="text-grey font-semibold text-base mt-1 font-sans">
+                <p className="text-grey font-semibold text-base mt-1">
                   Ethereum
                 </p>
               </div>
@@ -233,7 +233,7 @@ const Welcome: React.FC = () => {
               />
             </div>
             {invalidAddressWarning && (
-              <p className="text-red-500 mt-2 flex items-center gap-1 font-sans">
+              <p className="text-red-500 mt-2 flex items-center gap-1">
                 <MdDangerous style={{ fontSize: "24px" }} /> Information
                 Required, Incomplete.
               </p>
@@ -246,7 +246,7 @@ const Welcome: React.FC = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-white w-full mt-2 bg-lightgreen font-sans border-[1px] p-2 border-[#ffffff] hover:bg-[#29552d] rounded-full cursor-pointer flex items-center justify-center"
+                className="text-white w-full mt-2 bg-lightgreen border-[1px] p-2 border-[#ffffff] hover:bg-[#29552d] rounded-full cursor-pointer flex items-center justify-center"
               >
                 Send now <LuChevronRightCircle className="ml-2" />
               </button>

@@ -33,7 +33,7 @@ const FlightAdvert = (props: Props) => {
                   </span>
                 </Reveal>
                 <Reveal>
-                  <p className="font-sans my-2">
+                  <p className="my-2">
                     Transform into a digital nomad with courses on remote work,
                     online entrepreneurship, and digital marketing.
                   </p>
@@ -47,7 +47,7 @@ const FlightAdvert = (props: Props) => {
                   </span>
                 </Reveal>
                 <Reveal>
-                  <p className="font-sans my-2">
+                  <p className="my-2">
                     Transform into a digital nomad with courses on remote work,
                     online entrepreneurship, and digital marketing.
                   </p>
@@ -61,7 +61,7 @@ const FlightAdvert = (props: Props) => {
                   </span>
                 </Reveal>
                 <Reveal>
-                  <p className="font-sans my-2">
+                  <p className="my-2">
                     Transform into a digital nomad with courses on remote work,
                     online entrepreneurship, and digital marketing.
                   </p>

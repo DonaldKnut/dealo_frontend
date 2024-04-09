@@ -17,7 +17,7 @@ const Study = (props: Props) => {
           <h1 className="text-6xl freelance py-4">Learn, Earn, and Repay</h1>
         </Reveal>
         <Reveal>
-          <p className="py-4 font-sans text-xl onboad_text">
+          <p className="py-4 text-xl onboad_text">
             Our Learning Management Systems boasts a collection of specialized
             courses tailored for passionate travel enthusiasts like yourself. By
             accelerating your skill development, you not only become a confident
@@ -34,7 +34,7 @@ const Study = (props: Props) => {
               </span>
             </Reveal>
             <Reveal>
-              <p className="font-sans my-2">
+              <p className="my-2">
                 Transform into a digital nomad with courses on remote work,
                 online entrepreneurship, and digital marketing.
               </p>
@@ -48,7 +48,7 @@ const Study = (props: Props) => {
               </span>
             </Reveal>
             <Reveal>
-              <p className="font-sans my-2">
+              <p className="my-2">
                 Our photography courses teach you the art of storytelling
                 through images, creating visual narratives that showcase your
                 travel adventures.
@@ -63,7 +63,7 @@ const Study = (props: Props) => {
               </span>
             </Reveal>
             <Reveal>
-              <p className="font-sans my-2">
+              <p className="my-2">
                 These courses not only elevate your travel experience but also
                 position you as a sought-after candidate upon your return.
               </p>

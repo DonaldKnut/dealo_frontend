@@ -34,6 +34,32 @@ export const NAV_LINKS = [
     icon: <BiSolidContact className="text-2xl" />,
   },
 ];
+export const CRYPTO_LINKS = [
+  {
+    href: "/",
+    key: "home",
+    label: "Home",
+    icon: <RiHomeSmile2Fill className="text-2xl" />,
+  },
+  {
+    href: "#",
+    key: "FAQ",
+    label: "FAQ",
+    icon: <TbInfoCircleFilled className="text-2xl" />,
+  },
+  {
+    href: "#",
+    key: "packages",
+    label: "Packages",
+    icon: <BiSolidPackage className="text-2xl" />,
+  },
+  {
+    href: "/contact",
+    key: "contact",
+    label: "Contact",
+    icon: <BiSolidContact className="text-2xl" />,
+  },
+];
 
 //CATEGORIES SECTION
 export const CATEGORIES = [

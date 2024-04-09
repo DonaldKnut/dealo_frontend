@@ -81,15 +81,6 @@ body,
   font-family: "Lobster";
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
 body,
 html {
   /* padding: 20px; */

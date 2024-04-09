@@ -36,7 +36,7 @@ export default function Home() {
           <p className="mt-4 text-white">
             Whether you're a seasoned oncologist, a dedicated researcher, or a
             healthcare professional passionate about cancer care, Dealo Cancer
-            Research Center invites you to join our community and be part of the
+            Research Hub invites you to join our community and be part of the
             collective effort to find a cure for cancer. Together, we can make a
             difference in the lives of cancer patients and their families,
             bringing hope and healing to those affected by this devastating
@@ -45,12 +45,12 @@ export default function Home() {
           </p>
         </Reveal>
         <Reveal>
-          <Link href="/dealo-learn/academy">
+          <a href="/research/hub">
             <Button variant="secondary" className="mt-5 mb-5">
               Start Networking
               <MdOutlineArrowOutward className="text-green-700 text-2xl" />
             </Button>
-          </Link>
+          </a>
         </Reveal>
         <Reveal>
           <div className="socials_mother_wrapper_container flex gap-2 text-2xl text-green-300">

@@ -42,6 +42,7 @@
   background-color: white;
   border-radius: 50px;
   padding: 6px;
+  width: 321px;
   box-shadow: -6px -1px 26px #3e773ea3;
 }
 
@@ -132,9 +133,9 @@ input {
     margin: auto;
   }
 
-  .search {
+  /* .search {
     width: 70%;
-  }
+  } */
 
   .main-image {
     width: 658px;

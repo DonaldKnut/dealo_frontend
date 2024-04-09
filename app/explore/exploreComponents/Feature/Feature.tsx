@@ -80,7 +80,7 @@ const Feature = (props: Props) => {
         <h3 className="bold-32 text-center freelance text-3xl">
           Featured Destinations
         </h3>
-        <p className="text-center font-sans">
+        <p className="text-center">
           Picture yourself strolling through the vibrant streets of your dream
           destination, soaking in the culture, and creating memories that last a
           lifetime.
@@ -133,11 +133,11 @@ const FeatureItem = ({ title, path, des }: FeatureItem) => {
         </Link>
       </div>
       <div className="px-5 py-3 absolute bottom-0 w-full">
-        <div className="capitalize text-[17px] text-white font-[500] font-sans">
+        <div className="capitalize text-[17px] text-white font-[500]">
           <BsGlobeAsiaAustralia />
           {title}
         </div>
-        <div className="text-white my-2 text-[15px] font-sans">{des}</div>
+        <div className="text-white my-2 text-[15px]">{des}</div>
       </div>
     </div>
   );

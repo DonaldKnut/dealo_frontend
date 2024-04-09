@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { NAV_LINKS } from "@/constant";
+import { CRYPTO_LINKS } from "@/constant";
 // import Button from "../explore/exploreComponents/Button/Button";
 import { CgMenuRound } from "react-icons/cg";
 import { RiCloseCircleFill } from "react-icons/ri";
@@ -14,13 +14,13 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   const toggleMenu = () => setMenuOpened(!menuOpened);
   return (
     <>
-      <nav className="flex items-center justify-between max-container px-12 z-30 py-2 shadow-xl rounded-full ring-offset-green-500 fixed w-[95%] left-[50%] top-1 translate-x-[-50%] font-sans bg-green-900/90 text-white">
+      <nav className="flex items-center justify-between max-container px-12 z-30 py-2 shadow-xl rounded-full ring-offset-green-500 fixed w-[95%] left-[50%] top-1 translate-x-[-50%] bg-green-900/90 text-white">
         <Link href="/dealopay" passHref>
           <Image
             src="/cryptoAssets/dealopay-white.png"
             alt="dealo travels logo"
-            width={80}
-            height={80}
+            width={60}
+            height={60}
           />
         </Link>
         <ul className="hidden lg:flex h-full space-x-8">

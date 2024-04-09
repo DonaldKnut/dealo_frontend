@@ -25,14 +25,18 @@ export default function Home() {
           </h1>
         </div>
         <h1 className="text-3xl text-white">
-          Empower yourself using Dealo's Artificial Intelligence to study online
+          Harnessing Smart Contracts, Sending crypto to and fro across the
+          world.
         </h1>
         <Reveal>
           <p className="mt-4 text-white">
-            Dealo's Artificial Intelligence is revolutionizing the online
-            learning experiences, offering tools designed to empower and enhance
-            your educational journey. let's explore how you can leverage Dealo's
-            AI to supercharge your online learning sessions.
+            The traditional financial world often grapples with delays in
+            settling transactions. Smart contracts, on the other hand,
+            facilitate instant settlements. Whether you are sending crypto for a
+            business transaction or a personal exchange, the decentralized and
+            automated nature of smart contracts ensures that parties involved
+            receive their assets promptly, enhancing the overall efficiency of
+            global financial interactions.
           </p>
         </Reveal>
         <Reveal>

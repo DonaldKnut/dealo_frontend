@@ -43,12 +43,10 @@ const Hero = (props: Props) => {
                 <h1 className="freelance hero-text">Travel Now</h1>
               </Reveal>
               <Reveal>
-                <h2 className="later-text font-Pacifico freelance font-serif">
-                  Pay Later...
-                </h2>
+                <h2 className="hero-text">Pay Later...</h2>
               </Reveal>
               <Reveal>
-                <p className="font-sans japa_subtitle py-5">
+                <p className="japa_subtitle py-5">
                   Welcome to our revolutionary platform that not only makes your
                   dream travel destinations a reality but also empowers you with
                   valuable skills for a brighter future.
@@ -61,7 +59,7 @@ const Hero = (props: Props) => {
                   </span>
                 </Reveal>
                 <Reveal>
-                  <p className="font-sans japa_subtitle flex items-baseline gap-2">
+                  <p className="japa_subtitle flex items-baseline gap-2">
                     {typedText}
                   </p>
                 </Reveal>
@@ -72,9 +70,9 @@ const Hero = (props: Props) => {
             </div> */}
           </div>
           <Reveal>
-            <h5 className="font-sans mt-2 pl-2">Explore the key points.</h5>
+            <h5 className=" mt-2 pl-2">Explore the key points.</h5>
           </Reveal>
-          <ul className="flex flex-wrap gap-4 font-sans mt-2 pl-2">
+          <ul className="flex flex-wrap gap-4 mt-2 pl-2">
             {CATEGORIES.map((category) => (
               <CategoryItem
                 title={category.title}
