@@ -24,7 +24,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           />
         </Link>
         <ul className="hidden lg:flex h-full space-x-8">
-          {NAV_LINKS.map((link) => (
+          {CRYPTO_LINKS.map((link) => (
             <li key={link.key} className="flex items-center">
               <Link href={link.href} passHref>
                 <div className="flex items-center transition-all duration-500 ease-in-out hover:text-green-500">
@@ -56,7 +56,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
               : "flex flex-col justify-center p-12 w-64 fixed top-24 right-[-100%] bg-green-700 rounded-lg transition-all duration-500  text-center  shadow-emerald-450"
           }
         >
-          {NAV_LINKS.map((link) => (
+          {CRYPTO_LINKS.map((link) => (
             <li key={link.key} className="flex items-center mb-9">
               <Link href={link.href} passHref>
                 <div className="flex items-center transition-all duration-500 ease-in-out hover:text-green-500">

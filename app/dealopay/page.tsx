@@ -65,13 +65,16 @@ export default function Home() {
         </Reveal>
       </div>
       <div>
-        <Image
-          src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712452424/refvxtgjuyyuflespldy.png"
-          alt="crypto hand"
-          width="270"
-          height={270}
-          className="ai_image mt-5"
-        />
+        <Reveal>
+          <Image
+            // src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712452424/refvxtgjuyyuflespldy.png"
+            src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712668753/uuuayujjke8squhyrwsc.png"
+            alt="crypto hand"
+            width="370"
+            height={370}
+            className="ai_image mt-5"
+          />
+        </Reveal>
       </div>
     </main>
   );

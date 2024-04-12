@@ -1,7 +1,3 @@
-.hero-text {
-  font-size: 123px;
-}
-
 .hero-wrapper {
   padding: 0 0 0 62px;
 }
@@ -9,7 +5,9 @@
 .japa_subtitle {
   width: 83%;
 }
-
+.hero-text {
+  font-size: 63px;
+}
 .hero_feature {
   display: flex;
   align-items: baseline;
@@ -57,5 +55,9 @@ video::before {
 @media (min-width: 768px) {
   .japa_subtitle {
     width: 43%;
+  }
+
+  .hero-text {
+    font-size: 123px;
   }
 }

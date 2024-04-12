@@ -2,16 +2,14 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "./Navbar.css";
-// import { currentUser } from "@/lib/auth";
-// // import { ThemeSwitcher } from "../utils/ThemeSwitcher";
 import { HiOutlineUserCircle } from "react-icons/hi";
-// import CustomModal from "./CustomModal";
 import { useSession } from "next-auth/react";
+import { FaUser } from "react-icons/fa";
 // import Login from "../login/page";
 import { LuChevronDownCircle } from "react-icons/lu";
 import { UserRole } from "@prisma/client";
-import { signOut } from "@/auth";
-// import { signOut } from "next-auth/react";
+import { useCurrentUser } from "@/hooks/use-current-user";
+import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 
 interface NavbarProps {
   route: string;
@@ -33,7 +31,8 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const { data: user } = useSession();
   const userName = user?.user?.name || "Guest";
-  const userImageUrl = user?.user?.image || "";
+  const activeUser = useCurrentUser();
+  const userImageUrl = activeUser?.image || "";
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
   // const [active, setActive] = useState(false);
@@ -73,9 +72,6 @@ const Navbar: React.FC<NavbarProps> = ({
     setIsOptionsDropdownOpen(!isOptionsDropdownOpen);
   };
 
-  const cloudinaryDealoImageUrl =
-    "https://res.cloudinary.com/dtujpq8po/image/upload/v1704475472/gpxhvhbkfawgyej5dayw.png";
-
   return (
     <nav
       className={`navbar ${isOpen ? "is-active" : ""} ${
@@ -111,13 +107,12 @@ const Navbar: React.FC<NavbarProps> = ({
             </a>
             <div className="user-sec">
               {userImageUrl ? (
-                <Image
-                  src={userImageUrl}
-                  alt="user logo"
-                  className="user-logo"
-                  width={30}
-                  height={30}
-                />
+                <Avatar>
+                  <AvatarImage src={userImageUrl} />
+                  <AvatarFallback className="bg-green-700">
+                    <FaUser className="text-white" />
+                  </AvatarFallback>
+                </Avatar>
               ) : (
                 <Image
                   src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712528054/ucbbnu8rshpzsyl9tvz3.png"
@@ -252,13 +247,12 @@ const Navbar: React.FC<NavbarProps> = ({
               </Link>
               <div className="user-sec user_sec">
                 {userImageUrl ? (
-                  <Image
-                    src={userImageUrl}
-                    alt="user logo"
-                    className="user-logo"
-                    width={30}
-                    height={30}
-                  />
+                  <Avatar>
+                    <AvatarImage src={userImageUrl} />
+                    <AvatarFallback className="bg-green-700">
+                      <FaUser className="text-white" />
+                    </AvatarFallback>
+                  </Avatar>
                 ) : (
                   <Image
                     src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712528054/ucbbnu8rshpzsyl9tvz3.png"

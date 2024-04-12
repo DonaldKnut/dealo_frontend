@@ -53,7 +53,7 @@ const Gigs: React.FC = () => {
           <div className="right-controls">
             <span className="sort-by">SortBy</span>
             <span
-              className="sort-type"
+              className="sort-type ml-4"
               onClick={() => {
                 setOpen(!open);
               }}

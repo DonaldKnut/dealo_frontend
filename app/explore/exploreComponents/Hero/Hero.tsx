@@ -6,11 +6,14 @@ import { CATEGORIES } from "@/constant";
 import { LuCheckCircle2 } from "react-icons/lu";
 import Link from "next/link";
 import { SiStarship } from "react-icons/si";
+import { useSession } from "next-auth/react";
 // import Image from "next/image";
 
 type Props = {};
 
 const Hero = (props: Props) => {
+  const { data: user } = useSession();
+  const userName = user?.user?.name || "Guest";
   const [typedText, setTypedText] = useState("");
   const originalText = `Apply for a travel loan to visit your dream destination without worrying about immediate financial constraints.`;
 
@@ -38,6 +41,11 @@ const Hero = (props: Props) => {
             <div className="hero_text_container">
               <Reveal>
                 <SiStarship className="text-6xl" />
+              </Reveal>
+              <Reveal>
+                <h1 className="text-white text-2xl">
+                  Welcome <span className="text-green-400">{userName}</span>
+                </h1>
               </Reveal>
               <Reveal>
                 <h1 className="freelance hero-text">Travel Now</h1>

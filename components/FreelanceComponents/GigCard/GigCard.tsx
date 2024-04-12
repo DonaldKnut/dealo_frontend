@@ -20,41 +20,45 @@ interface GigCardProps {
 
 const GigCard: React.FC<GigCardProps> = ({ item }) => {
   return (
-    <div className="gig-card font-sans">
-      <Link href={`/gigs/${item.id}`} className="anchor-link">
-        <div className="pp_image">
-          <img src={item.img} alt="image of a gig" className="bg-picture" />
-        </div>
-        <div className="info">
-          <div className="user">
-            <img src={item.pp} alt="" className="user-picture" />
-            <span>{item.username}</span>
+    <div className="gig-card">
+      <Link href={`/gigs/${item.id}`} passHref>
+        <a className="anchor-link">
+          <div className="pp_image">
+            <img src={item.img} alt="image of a gig" className="bg-picture" />
           </div>
-          <p className="gig-desc">{item.desc}</p>
-          <div className="kisses_wrapper">
-            <FaKissWinkHeart className="kisses" />
-            <span>{item.star}</span>
+          <div className="info">
+            <div className="user">
+              <img src={item.pp} alt="" className="user-picture" />
+              <span>{item.username}</span>
+            </div>
+            <p className="gig-desc">{item.desc}</p>
+            <div className="kisses_wrapper">
+              <FaKissWinkHeart className="kisses" />
+              <span>{item.star}</span>
+            </div>
           </div>
-        </div>
-        <hr />
-        <div className="details">
-          <div className="star-icon">
-            <i className="fa-solid fa-heart"></i>
+          <hr />
+          <div className="details">
+            <div className="star-icon">
+              <i className="fa-solid fa-heart"></i>
+            </div>
+            <div className="item-price">
+              <span>Starting At</span>
+              <p className="pricing">
+                <span>
+                  <Image
+                    src={images.cash}
+                    alt="image of a cash icon"
+                    className="cash-icon"
+                    height={50}
+                    width={50}
+                  />
+                </span>
+                ${item.price}
+              </p>
+            </div>
           </div>
-          <div className="item-price">
-            <span>Starting At</span>
-            <p className="pricing">
-              <span>
-                <Image
-                  src={images.cash}
-                  alt="image of a cash icon"
-                  className="cash-icon"
-                />
-              </span>
-              ${item.price}
-            </p>
-          </div>
-        </div>
+        </a>
       </Link>
     </div>
   );

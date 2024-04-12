@@ -17,7 +17,7 @@ export const Header = ({ label }: HeaderProps) => {
   return (
     <div className="w-full flex flex-col gap-y-4 items-center justify-center">
       {/* <h1 className={cn("text-3xl font-semibold", font.className)}>Dealo</h1> */}
-      <Link href="/">
+      <a href="/">
         <Image
           src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712158494/uir9zzsq1tpqm39i2qr5.png"
           alt=""
@@ -25,7 +25,7 @@ export const Header = ({ label }: HeaderProps) => {
           width={100}
           className="m-auto"
         />
-      </Link>
+      </a>
       <p className="text-muted-foreground text-sm text-white">{label}</p>
     </div>
   );
