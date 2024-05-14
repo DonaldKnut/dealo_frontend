@@ -96,8 +96,8 @@ const Navbar: React.FC<NavbarProps> = ({
             <a href="/learn">
               <span className="navbar-item">Education</span>
             </a>
-            <a href="/network">
-              <span className="navbar-item">Health Hub</span>
+            <a href="/forge">
+              <span className="navbar-item">Forge</span>
             </a>
             <a href="/explore">
               <span className="navbar-item">Dealo Travels</span>
@@ -226,8 +226,8 @@ const Navbar: React.FC<NavbarProps> = ({
               <Link href="/education">
                 <span className="navbar-item">Education</span>
               </Link>
-              <Link href="/dealopay">
-                <span className="navbar-item">Health Hub</span>
+              <Link href="/forge">
+                <span className="navbar-item">Forge</span>
               </Link>
               <Link href="/explore">
                 <span className="navbar-item">Dealo Travels</span>

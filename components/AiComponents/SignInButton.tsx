@@ -8,7 +8,7 @@ type Props = {};
 const SignInButton = (props: Props) => {
   return (
     <Button
-      variant="ghost"
+      variant="secondary"
       onClick={() => {
         signIn("google");
       }}

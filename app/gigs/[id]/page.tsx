@@ -56,7 +56,7 @@ const Gig = () => {
       </div>
       <Carousel>
         {slides.map((s, index) => (
-          <img
+          <Image
             src={s}
             className="slide-images"
             alt="image of slide"

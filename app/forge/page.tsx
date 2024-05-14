@@ -8,7 +8,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { Reveal } from "@/components/utils/reveal";
 import "./page.css";
 import { useSession } from "next-auth/react";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Home() {
   const { data: user } = useSession();
@@ -18,30 +18,26 @@ export default function Home() {
     <main className="ai_wrapper">
       <div className="ai_first_wrap">
         <div className="user_icon">
-          <Reveal>
-            <h1 className="text-white text-2xl">
-              Welcome <span className="text-green-400">{userName}</span>
-            </h1>
-          </Reveal>
-        </div>
-        <Reveal>
-          <h1 className="text-3xl text-white">
-            Empower yourself using Dealo's Artificial Intelligence to study
-            online
+          <h1 className="text-white text-2xl">
+            Welcome <span className="text-green-400">{userName}</span>
           </h1>
-        </Reveal>
+        </div>
+        <h1 className="text-3xl text-white">
+          Forge: Empowering Creativity and Innovation
+        </h1>
         <Reveal>
           <p className="mt-4 text-white">
-            Dealo's Artificial Intelligence is revolutionizing the online
-            learning experiences, offering tools designed to empower and enhance
-            your educational journey. let's explore how you can leverage Dealo's
-            AI to supercharge your online learning sessions.
+            Forge is your ultimate destination for unleashing creativity and
+            innovation through the power of artificial intelligence. Whether
+            you're a designer, musician, filmmaker, or developer, Forge provides
+            the tools and resources you need to bring your ideas to life in ways
+            you never thought possible.
           </p>
         </Reveal>
         <Reveal>
-          <a href="/dealo-academy">
+          <a href="/create">
             <Button variant="secondary" className="mt-5 mb-5">
-              Start Learning{" "}
+              Start Work{" "}
               <MdOutlineArrowOutward className="text-green-700 text-2xl" />
             </Button>
           </a>
@@ -49,18 +45,18 @@ export default function Home() {
         <Reveal>
           <div className="socials_mother_wrapper_container flex gap-2 text-2xl text-green-300">
             <FaSquareXTwitter className="cursor-pointer hover:text-green-700" />
-            <FaLinkedin />
-            <PiInstagramLogoFill />
+            <FaLinkedin className="cursor-pointer hover:text-green-700" />
+            <PiInstagramLogoFill className="cursor-pointer hover:text-green-700" />
           </div>
         </Reveal>
       </div>
       <div>
         <Reveal>
           <Image
-            src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712183869/v3sgysq20ylde6bsxlvq.png"
+            src="https://res.cloudinary.com/dtujpq8po/image/upload/v1712944561/ptfpnawdfcmfehk0bmte.png"
             alt="AI image"
-            width="270"
-            height={270}
+            width="370"
+            height={370}
             className="ai_image mt-5"
           />
         </Reveal>
